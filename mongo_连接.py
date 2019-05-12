@@ -16,5 +16,5 @@ result = db.get_collection('houzhimeng').insert_many([
 # result = collection.insert(data)
 print(result)
 
-# content = collection.find({'age':'30'})
+# content = collection.find({'age':'30'})mongo_连接.py:18
 # print(content)

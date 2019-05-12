@@ -4,7 +4,7 @@
 
 '''
 
-import requests,time
+import requests, time
 
 url='https://api.live.bilibili.com/ajax/msg'  # POST请求，向这个网址提交数据
 

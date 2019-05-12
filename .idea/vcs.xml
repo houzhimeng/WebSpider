@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Pandas_/pandas_tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_analysis" vcs="Git" />
   </component>
 </project>

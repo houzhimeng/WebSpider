@@ -30,7 +30,7 @@ from lxml import html
 #
 # handler.insert(content_list)
 
-client = redis.StrictRedis(host='127.0.0.1',port=6379,password='123456')
+client = redis.Redis(host='127.0.0.1',port=6379,password='123456')
 client.lpush('hzm','456','789')
 print(client.llen('hzm'))
 # for key in client.keys():

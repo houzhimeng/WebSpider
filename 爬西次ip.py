@@ -3,7 +3,7 @@ import csv
 import lxml
 import os
 from lxml import etree
-from copyheaders import headers_raw_to_dict
+# from copyheaders import headers_raw_to_dict
 import json
 
 

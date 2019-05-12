@@ -56,11 +56,11 @@ def parse_one_page(html):
         }
 
 def write_to_file3(item):
-    with open('猫眼top100.csv', 'a', encoding='utf_8_sig',newline='') as f:
+    with open('猫眼top100.csv', 'a', encoding='utf_8_sig', newline='') as f:
         # 'a'为追加模式（添加）
         # utf_8_sig格式导出csv不乱码
-        fieldnames = ['index', 'image', 'title', 'actor', 'time','score']
-        w = csv.DictWriter(f,fieldnames = fieldnames)
+        fieldnames = ['index', 'image', 'title', 'actor', 'time', 'score']
+        w = csv.DictWriter(f, fieldnames=fieldnames)
         # w.writeheader()
         w.writerow(item)
 

@@ -3,6 +3,7 @@ import re
 import os
 from multiprocessing.dummy import Pool
 
+
 start_url = 'http://www.kanunu8.com/book3/6879/'
 
 
@@ -13,7 +14,7 @@ def get_source(url):
     :return: 网页源代码
     """
     html = requests.get(url)
-    return html.content.decode('gbk')  # 这个网页需要使用gbk方式解码才能让中文正常显示
+    return html.content.decode('gbk') #这个网页需要使用gbk方式解码才能让中文正常显示
 
 
 def get_toc(html):
@@ -23,7 +24,7 @@ def get_toc(html):
     :return: 每章链接
     """
     toc_url_list = []
-    toc_block = re.findall('正文(.*?)</tbody>', html, re.S)[0]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        async
+    toc_block = re.findall('正文(.*?)</tbody>', html, re.S)[0]
     toc_url = re.findall('href="(.*?)"', toc_block, re.S)
     for url in toc_url:
         toc_url_list.append(start_url + url)
@@ -49,7 +50,7 @@ def save(chapter, article):
     :param article: 正文内容
     :return: None
     """
-    os.makedirs('动物农场', exist_ok=True)  # 如果没有"动物农场文件夹，就创建一个，如果有，则什么都不做"
+    os.makedirs('动物农场', exist_ok=True) #如果没有"动物农场文件夹，就创建一个，如果有，则什么都不做"
     with open(os.path.join('动物农场', chapter + '.txt'), 'w', encoding='utf-8') as f:
         f.write(article)
 

@@ -1,7 +1,12 @@
-import  subprocess
+# import  subprocess
+#
+#
+#
+# Cen = subprocess.check_output('ps -ef',shell=True).decode().strip()
+#
+# print(Cen)
 
+import datetime
 
-
-Cen = subprocess.check_output('ps -ef',shell=True).decode().strip()
-
-print(Cen)
+Time = datetime.datetime.now()
+print(Time)
