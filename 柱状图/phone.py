@@ -2,7 +2,7 @@
 # 柱状图
 
 import matplotlib.pyplot as plt
-import
+import time
 
 mobile_176xxxx4617 = [6.33, 24.1, 40.7, 47.9, 31.9, 31.4, 41.7, 46.4, 38.9, 39, 48, 47.4]
 mobile_155xxxx9617 = [41.4, 36.5, 16.4, 16.6, 16.1, 16, 16, 31.2, 20, 16, 22.1, 16]
